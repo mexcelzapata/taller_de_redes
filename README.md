@@ -54,7 +54,8 @@ $ docker run -d \
 Para realizar la imagen del `cliente` de postgres, ingresar el comando:
 
 ```
-docker run -it --name clienteSQL servidor
+docker run -it cliente
+$ psql -p 5432 -U pgadmin -P zxM9Ye0sB2eZthEe
 
 ```
 
