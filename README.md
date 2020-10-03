@@ -28,3 +28,10 @@ La primera vez que ejecute su contenedor, `pgadmin` creará un nuevo usuario con
 ```
 $ docker logs <CONTAINER_ID>
 ```
+Verá una salida como la siguiente:
+```
+========================================================================
+PostgreSQL User: "pgadmin"
+PostgreSQL Password: "WH7fwqY7bJCEMYKC"
+========================================================================
+```
