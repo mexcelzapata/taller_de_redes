@@ -8,7 +8,7 @@ Se debe clonar este repositorio en la terminal con el comando:
 ```
 $ git clone https://github.com/mexcelzapata/taller_de_redes.git
 ```
-
+###instalacion de imagenes 
 Para la instalación de la imagen `Cliente` de Postgres se debe ingresar el comando:
 ```
 $ docker build -t cliente taller_de_redes/client/
