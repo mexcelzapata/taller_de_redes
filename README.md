@@ -15,8 +15,8 @@ $ docker build -t cliente taller_de_redes/client/
 ```
 Para la instalación de la imagen `Servidor` de Postgres se debe ingresar en la carpeta `servidor`, el comando:
 ```
-$ cd \talle_de_redes\servidor
-$ docker build -t docker build -t frodenas/postgresql .
+$ cd /taller_de_redes/servidor/
+$ docker build -t frodenas/postgresql .
 ```
 
 ### Arranque del servidor
