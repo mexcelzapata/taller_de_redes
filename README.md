@@ -13,13 +13,14 @@ Para la instalación de la imagen `Cliente` de Postgres se debe ingresar el coma
 ```
 $ docker build -t cliente taller_de_redes/client/
 ```
-Para la instalación de la imagen `Servidor` de Postgres se debe ingresar el comando:
+Para la instalación de la imagen `Servidor` de Postgres se debe ingresar en la carpeta `servidor`, el comando:
 ```
-$ docker build -t servidor taller_de_redes/servidor/
+$ cd \talle_de_redes\servidor
+$ docker build -t docker build -t frodenas/postgresql .
 ```
 
 ### Arranque del servidor
-para ejecutar la imagen y seleccionar el puerto 5432, junto a una base de datos establecida es necesario:
+para ejecutar la imagen y seleccionar el puerto 5432, es necesario:
 ```
 $ docker run -d --name postgresql -p 5432:5432 frodenas/postgresql
 
