@@ -1,9 +1,9 @@
 # Taller_Redes_PGSQL
 
+Este repositorio tiene como finalidad instalar Dockerfile tanto para cliente como para su servidor, para fines practicos como tambien analisis de tráficos.
+
 ### Instalacion del Repositorio
 Se debe clonar este repositorio en la terminal con el comando:
-
-
 
 ```
 $ git clone https://github.com/mexcelzapata/taller_de_redes.git
