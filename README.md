@@ -58,4 +58,6 @@ docker run -it cliente
 $ psql -p 5432 -U pgadmin -P zxM9Ye0sB2eZthEe
 
 ```
+## Video capturando trafico generado entre el servidor y cliente
 
+[![Watch the video](https://t.jpg)](https://youtu.be/)
