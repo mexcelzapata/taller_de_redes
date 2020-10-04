@@ -60,4 +60,4 @@ $ psql -p 5432 -U pgadmin -P zxM9Ye0sB2eZthEe
 ```
 ### Video explicativo y análisis de tráfico
 
-[![Watch the video](https://t.jpg)](https://youtu.be/)
+[![Watch the video](https://youtu.be/meM9peWLYMg)
