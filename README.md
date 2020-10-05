@@ -37,7 +37,8 @@ Para establecer la conexión es necesario saber la ip del `servidor`:
 $ psql -h ip_servidor -p 5432 -U postgres
 
 ```
-Una vez ingresado, pedirá la clave en este caso es `12345`.
+Una vez ingresado, pedirá la clave en este caso es `12345`
+(En caso de no funcionar el dockerfile, porfavor revisarlo y realizar la instalación a mano uwu)
 ### Video explicativo y análisis de tráfico
 
 [![Watch the video]](https://youtu.be/meM9peWLYMg)
