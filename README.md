@@ -15,49 +15,29 @@ $ docker build -t cliente taller_de_redes/client/
 ```
 Para la instalación de la imagen `Servidor` de Postgres se debe ingresar en la carpeta `servidor`, el comando:
 ```
-$ cd /taller_de_redes/servidor/
-$ docker build -t frodenas/postgresql .
-```
+$docker build -t servidor taller_de_redes/servidor
 
+```
 ### Arranque del servidor
-para ejecutar la imagen y seleccionar el puerto 5432, es necesario:
-```
-$ docker run -d --name postgresql -p 5432:5432 frodenas/postgresql
+Para ejecutar la imagen del servidor es necesario:
 
 ```
-La primera vez que ejecute su contenedor, `pgadmin` creará un nuevo usuario con todos los privilegios con una contraseña aleatoria. Para obtener la contraseña, verifique los registros del contenedor ejecutando:
-
-```
-$ docker logs <CONTAINER_ID>
-```
-Verá una salida como la siguiente:
-```
-========================================================================
-PostgreSQL User: "pgadmin"
-PostgreSQL Password: "WH7fwqY7bJCEMYKC"
-========================================================================
+$ docker run -it servidor
 ```
 
-Si desea crear una base de datos en el momento del arranque del contenedor, puede ocupar:
-
-```
-$ docker run -d \
-    --name postgresql \
-    -p 5432:5432 \
-    -e POSTGRES_USERNAME=myuser \
-    -e POSTGRES_PASSWORD=mypassword \
-    -e POSTGRES_DBNAME=mydb \
-    -e POSTGRES_EXTENSIONS=citext \
-    frodenas/postgresql
-```
 ### Arranque del cliente
 Para realizar la imagen del `cliente` de postgres, ingresar el comando:
 
 ```
 docker run -it cliente
-$ psql -p 5432 -U pgadmin -P zxM9Ye0sB2eZthEe
 
 ```
+Para establecer la conección es necesario saber la ip del servidor
+```
+$ psql -h ip_servidor -p 5432 -U postgres
+
+```
+
 ### Video explicativo y análisis de tráfico
 
 [![Watch the video]](https://youtu.be/meM9peWLYMg)
