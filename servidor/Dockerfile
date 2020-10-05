@@ -20,7 +20,7 @@ RUN ./configure --prefix=/opt/PostgreSQL-13
 RUN make
 RUN make install 
 ENV PASS='12345'
-RUN mount -o remount,rw /
+#RUN mount -o remount,rw /
 RUN useradd postgres
 RUN passwd postgres
 RUN echo $PASS > New password:
