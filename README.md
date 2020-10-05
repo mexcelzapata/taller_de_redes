@@ -32,7 +32,7 @@ Para realizar la imagen del `cliente` de postgres, ingresar el comando:
 docker run -it cliente
 
 ```
-Para establecer la conección es necesario saber la ip del `servidor`.
+Para establecer la conección es necesario saber la ip del `servidor`:
 ```
 $ psql -h ip_servidor -p 5432 -U postgres
 
