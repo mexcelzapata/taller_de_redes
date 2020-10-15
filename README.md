@@ -42,7 +42,7 @@ Una vez ingresado, pedirá la clave en este caso es `12345`
 
 ### Video explicativo y análisis de tráfico
 
-(https://youtu.be/meM9peWLYMg)
+https://youtu.be/meM9peWLYMg
 
 ## Entrega 2:
 
