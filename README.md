@@ -67,7 +67,7 @@ pip3 install polymorph
 Para mas información y soporte sobre `Polymorph` visita: https://github.com/shramos/polymorph .
 Una vez instalado en el equipo, ademas del softwere de trabajo (PostgreSQL) es posible interceptar información, como modelos hay un `File` de nombre `funciones` que permiten realizar analisis a diferentes sentencias como tambien en la conexión con la base de datos.
 
-
+### Video Explicativo 
 Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
 
 https://youtu.be/meM9peWLYMg
