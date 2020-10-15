@@ -42,7 +42,7 @@ Una vez ingresado, pedirá la clave en este caso es `12345`
 
 ### Video explicativo y análisis de tráfico
 
-[[Watch the video]](https://youtu.be/meM9peWLYMg)
+(https://youtu.be/meM9peWLYMg)
 
 ## Entrega 2:
 
@@ -68,6 +68,7 @@ pip3 install polymorph
 Una vez instalado en el equipo, ademas del softwere de trabajo (PostgreSQL) es posible interceptar información, como modelos hay un `File` de nombre `funciones` que permiten realizar analisis a diferentes sentencias como tambien en la conexión con la base de datos.
 
 
+Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
 
-
+https://youtu.be/meM9peWLYMg
 
