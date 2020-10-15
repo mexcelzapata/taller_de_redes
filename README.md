@@ -64,7 +64,7 @@ Después de la instalación de las dependencias, el marco en sí se puede instal
 pip3 install git+https://github.com/kti/python-netfilterqueue
 pip3 install polymorph
 ```
-Para mas información y soporte sobre `Polymorph` visita: https://github.com/shramos/polymorph
+Para mas información y soporte sobre `Polymorph` visita: https://github.com/shramos/polymorph .
 Una vez instalado en el equipo, ademas del softwere de trabajo (PostgreSQL) es posible interceptar información, como modelos hay un `File` de nombre `funciones` que permiten realizar analisis a diferentes sentencias como tambien en la conexión con la base de datos.
 
 
