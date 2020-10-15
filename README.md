@@ -50,7 +50,7 @@ Esta segunda entrega tiene como finalidad poder interceptar y modificar packetes
 
 ### Instalacion de Polymorph 
 
-Para ello es necesarios basarnos en el repositorio de `Shamos` donde tenemos que seguir los siguentes pasos:
+Para ello es necesarios basarnos en el repositorio de `Shramos` donde tenemos que seguir los siguentes pasos:
 
 Es necesario saber que este framework está diseñado para instalarse y ejecutarse en entorno linux, antes de instalarlo son necesarios los siguientes requisitos:
 
