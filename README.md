@@ -70,5 +70,4 @@ Una vez instalado en el equipo, ademas del softwere de trabajo (PostgreSQL) es p
 ### Video Explicativo 
 Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
 
-https://youtu.be/meM9peWLYMg
-
+https://www.youtube.com/watch?v=UEimNt_zGLY
