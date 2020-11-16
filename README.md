@@ -71,3 +71,61 @@ Una vez instalado en el equipo, ademas del softwere de trabajo (PostgreSQL) es p
 Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
 
 https://www.youtube.com/watch?v=UEimNt_zGLY
+
+
+
+## Entrega 3
+
+En esta tercera entrega, se dio paso a trabajar con diferentes metricas dentro de la red, con la finalidad de ver como estas modificaciones afectan al software postgres.
+Es por ello que en esta entrega es necesario trabajar con dos metodos que se describiran a continuacion:
+
+
+### Metodo pasivo
+Este metodo tiene como finalidad por ver en tiempo real el comportamiento del trafico generado entre el cliente y servidor. En primera instacia en necesario ocupar la herramienta `Netem` que nos permita controlar el trafico generado en la red, donde se aplicó un delay de XXXXX:
+```
+tc 
+```
+Una vez estabecido el delay a ocupar dentro del contenedor del cliente, es necesario utilizar `Polymorph` para poder interceptar los paquetes y poder desplegar el contenido en tiempo real del trafico generado entre el servidor y cliente.
+
+la funcion empleada esta en el archivo `Funcion_entrega_3`, donde se trabaja la metrica de throughput dentro de la red.
+
+
+### Metodo Activo
+En este metodo fue necesario segmentar en 4 tipos de metricas, donde para cada una fue necesario realzar sus capturas correspondientes que nos permitió poder analizar las metricas dentro de ellas.
+
+## Delay
+Para este caso, se ocupó una modificación de `Netem` de:
+```
+ tc qdisc add dev eth0 root netem delay 100s 10ms distribution pareto
+ ```
+Se puede apreciar en la carpeta de capturas/delay las diferentes capturas empleadas en esta métrica.
+
+##  Packet corrupted
+
+Para este caso, se ocupó una modificación de `Netem` de:
+```
+ tc qdisc add dev eth0 root netem corrupt 20%
+ ```
+Se puede apreciar en la carpeta de capturas/packet_corrupted las diferentes capturas empleadas en esta métrica.
+
+## Packet Loss
+
+Para este caso, se ocupó una modificación de `Netem` de:
+```
+  tc qdisc add dev eth0 root netem loss 40%
+ ```
+Se puede apreciar en la carpeta de capturas/packet_loss las diferentes capturas empleadas en esta métrica.
+
+
+## Throughput
+
+Para este caso, se ocupó una modificación de `Netem` de:
+```
+  tc qdisc add dev eth0 root netem delay 1000ms 30ms distribution pareto
+
+ ```
+Se puede apreciar en la carpeta de capturas/throughput las diferentes capturas empleadas en esta métrica.
+
+
+
+
