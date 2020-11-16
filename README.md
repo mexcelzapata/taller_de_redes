@@ -81,9 +81,9 @@ Es por ello que en esta entrega es necesario trabajar con dos metodos que se des
 
 
 ### Metodo pasivo
-Este metodo tiene como finalidad por ver en tiempo real el comportamiento del trafico generado entre el cliente y servidor. En primera instacia en necesario ocupar la herramienta `Netem` que nos permita controlar el trafico generado en la red, donde se aplicó un delay de XXXXX:
+Este metodo tiene como finalidad por ver en tiempo real el comportamiento del trafico generado entre el cliente y servidor. En primera instacia en necesario ocupar la herramienta `Netem` que nos permita controlar el trafico generado en la red, donde se aplicó un delay de 100ms:
 ```
-tc 
+ tc qdisc add dev eth0 root netem delay 100s 10ms distribution pareto
 ```
 Una vez estabecido el delay a ocupar dentro del contenedor del cliente, es necesario utilizar `Polymorph` para poder interceptar los paquetes y poder desplegar el contenido en tiempo real del trafico generado entre el servidor y cliente.
 
@@ -122,10 +122,12 @@ Se puede apreciar en la carpeta de capturas/packet_loss las diferentes capturas 
 Para este caso, se ocupó una modificación de `Netem` de:
 ```
   tc qdisc add dev eth0 root netem delay 1000ms 30ms distribution pareto
-
  ```
 Se puede apreciar en la carpeta de capturas/throughput las diferentes capturas empleadas en esta métrica.
 
+### Video Explicativo 
+Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
 
+https://www.youtube.com/watch?v=UEimNt_zGLY
 
 
