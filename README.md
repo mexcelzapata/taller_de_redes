@@ -87,7 +87,7 @@ Este metodo tiene como finalidad por ver en tiempo real el comportamiento del tr
 ```
 Una vez estabecido el delay a ocupar dentro del contenedor del cliente, es necesario utilizar `Polymorph` para poder interceptar los paquetes y poder desplegar el contenido en tiempo real del trafico generado entre el servidor y cliente.
 
-la funcion empleada esta en el archivo `Funcion_entrega_3`, donde se trabaja la metrica de throughput dentro de la red.
+la funcion empleada esta en `entrega_3/funcion_polymorph`, donde se trabaja la metrica de throughput dentro de la red.
 
 
 ### Metodo Activo
@@ -98,7 +98,7 @@ Para este caso, se ocupó una modificación de `Netem` de:
 ```
  tc qdisc add dev eth0 root netem delay 100s 10ms distribution pareto
  ```
-Se puede apreciar en la carpeta de capturas/delay las diferentes capturas empleadas en esta métrica.
+Se puede apreciar en la carpeta de entrega_3/delay las diferentes capturas empleadas en esta métrica.
 
 ####  Packet corrupted
 
@@ -106,7 +106,7 @@ Para este caso, se ocupó una modificación de `Netem` de:
 ```
  tc qdisc add dev eth0 root netem corrupt 20%
  ```
-Se puede apreciar en la carpeta de capturas/packet_corrupted las diferentes capturas empleadas en esta métrica.
+Se puede apreciar en la carpeta de  entrega_3/packet_corrupted las diferentes capturas empleadas en esta métrica.
 
 #### Packet Loss
 
@@ -114,7 +114,7 @@ Para este caso, se ocupó una modificación de `Netem` de:
 ```
   tc qdisc add dev eth0 root netem loss 40%
  ```
-Se puede apreciar en la carpeta de capturas/packet_loss las diferentes capturas empleadas en esta métrica.
+Se puede apreciar en la carpeta de  entrega_3/packet_loss las diferentes capturas empleadas en esta métrica.
 
 
 #### Throughput
@@ -123,7 +123,7 @@ Para este caso, se ocupó una modificación de `Netem` de:
 ```
   tc qdisc add dev eth0 root netem delay 1000ms 30ms distribution pareto
  ```
-Se puede apreciar en la carpeta de capturas/throughput las diferentes capturas empleadas en esta métrica.
+Se puede apreciar en la carpeta de  entrega_3/throughput las diferentes capturas empleadas en esta métrica.
 
 ### Video Explicativo 
 Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
