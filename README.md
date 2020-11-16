@@ -93,14 +93,14 @@ la funcion empleada esta en el archivo `Funcion_entrega_3`, donde se trabaja la 
 ### Metodo Activo
 En este metodo fue necesario segmentar en 4 tipos de metricas, donde para cada una fue necesario realzar sus capturas correspondientes que nos permitió poder analizar las metricas dentro de ellas.
 
-## Delay
+#### Delay
 Para este caso, se ocupó una modificación de `Netem` de:
 ```
  tc qdisc add dev eth0 root netem delay 100s 10ms distribution pareto
  ```
 Se puede apreciar en la carpeta de capturas/delay las diferentes capturas empleadas en esta métrica.
 
-##  Packet corrupted
+####  Packet corrupted
 
 Para este caso, se ocupó una modificación de `Netem` de:
 ```
@@ -108,7 +108,7 @@ Para este caso, se ocupó una modificación de `Netem` de:
  ```
 Se puede apreciar en la carpeta de capturas/packet_corrupted las diferentes capturas empleadas en esta métrica.
 
-## Packet Loss
+#### Packet Loss
 
 Para este caso, se ocupó una modificación de `Netem` de:
 ```
@@ -117,7 +117,7 @@ Para este caso, se ocupó una modificación de `Netem` de:
 Se puede apreciar en la carpeta de capturas/packet_loss las diferentes capturas empleadas en esta métrica.
 
 
-## Throughput
+#### Throughput
 
 Para este caso, se ocupó una modificación de `Netem` de:
 ```
