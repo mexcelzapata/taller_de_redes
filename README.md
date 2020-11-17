@@ -127,7 +127,6 @@ Se puede apreciar en la carpeta de  entrega_3/throughput las diferentes capturas
 
 ### Video Explicativo 
 Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
-
-https://www.youtube.com/watch?v=UEimNt_zGLY
+https://www.youtube.com/watch?v=-3PKxx-TLBo
 
 
