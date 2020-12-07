@@ -129,4 +129,40 @@ Se puede apreciar en la carpeta de  entrega_3/throughput las diferentes capturas
 Puedes revisar este video para saber como y cuando aplicar las funciones que estan en este repositorio.
 https://www.youtube.com/watch?v=-3PKxx-TLBo
 
+## Entrega final
+
+En este trabajo trataremos un concepto de herramienta que nos ayudara en este ámbito llamado IDS (Integrated Development Environment) en especifico trabajaremos con Snort el cual es uno de los IDS más conocidos.
+
+### PCRE
+```
+alert tcp 172.17.0.2 any -> 172.17.0.3 5432( msg:"PostgreSQL constant deletions"; flow:established; pcre:"^((delete)|(DELETE)){1}";offset :0; sid:1000001; rev:20; )
+```
+### Activate/dynamic
+```
+activate tcp 172.17.0.2 any -> 172.17.0.3 5432 (flags: PA; msg:"Authentication request"; flow:established; activates: 1; content:"|52 00 00 00 0c|",depth 5; sid:1000006; rev:20;) 
+dynamic tcp 172.17.0.2 any -> 172.17.0.3 5432 (activated_by: 1; count: 4;)
+```
+### Offset
+```
+alert tcp 172.17.0.2 any -> 172.17.0.3 5432 (msg:"consecutive insertions"; flow:established; content:"INSERT"; offset:0; content:"1"; offset:7; sid:1000003; rev:20; )
+```
+### dsize
+```
+alert tcp 172.17.0.2 any -> 172.17.0.3 5432 (msg:"Buffer overflow"; flow:established; dsize:>8192; sid:1000004; rev:1; )
+```
+
+### Flow
+```
+alert tcp 172.17.0.2 any -> 172.17.0.3 5432 (msg:"constant Authentication request"; flow:established; content:"|52 00 00 00 0c|",depth 5; sid:1000002; rev:20; )
+```
+### Video Explicativo 
+Puedes revisar este video para saber que hacen las reglas que estan en este repositorio.
+https://youtu.be/EG6499TvPmg
+
+
+
+
+
+
+
 
